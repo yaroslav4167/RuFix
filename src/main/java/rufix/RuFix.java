@@ -29,14 +29,14 @@ public class RuFix {
     @Listener(order = Order.LAST)
     public void onCommand(SendCommandEvent event) {
         String tCom = convert(event.getCommand());
-        if(event.getCommand().equals(tCom))return;
+        if (event.getCommand().equals(tCom)) return;
         CommandSource src = event.getCause().first(CommandSource.class).orElse(null);
-        if(src==null||!alias.contains(convert(event.getCommand())))return;
-        Sponge.getCommandManager().process(src, tCom + " " +convert(event.getArguments()));
+        if (src == null || !alias.contains(convert(event.getCommand()))) return;
+        Sponge.getCommandManager().process(src, tCom + " " + convert(event.getArguments()));
         event.setCancelled(true);
     }
 
-    private String convert(String str){
+    private String convert(String str) {
         String s = str;
         String out = "`~@#$^&|qwertyuiop[]QWERTYUIOP{}asdfghjkl;'ASDFGHJKL:\"zxcvbnm,./ZXCVBNM<>?sS]}";
         String in = "ёЁ\"№;:?/йцукенгшщзхъЙЦУКЕНГШЩЗХЪфывапролджэФЫВАПРОЛДЖЭячсмитьбю.ЯЧСМИТЬБЮ,іІїЇ";
