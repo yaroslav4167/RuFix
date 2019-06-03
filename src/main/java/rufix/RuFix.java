@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-@Plugin(id = "ruFix", name = "RuFix", version = "1.0", description = "ruFix")
+@Plugin(id = "rufix", name = "RuFix", version = "1.0", description = "ruFix")
 public class RuFix {
     private List<String> alias = new ArrayList<>();
 
