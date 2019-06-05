@@ -13,3 +13,7 @@ Compatibility: SpongeAPI-**7.1.0**
 This plugin automaticly convert commands written on russian layout. 
 
 For example: `/рщьу` -> `/home`, `/рудз` -> `/help` etc.
+
+### Build project
+
+For start building the plugin, run - `./gradlew build`. Assembled plugin place in `./build/libs/`.
