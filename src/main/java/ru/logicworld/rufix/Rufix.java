@@ -15,6 +15,7 @@ import java.util.List;
 @Plugin(
         id = "rufix",
         name = "RuFix",
+        version = "1.0.1",
         description = "Convert commands from Russian to English layout"
 )
 public class Rufix {
