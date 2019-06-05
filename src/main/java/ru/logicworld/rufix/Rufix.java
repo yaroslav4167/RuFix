@@ -1,4 +1,4 @@
-package rufix;
+package ru.logicworld.rufix;
 
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.command.CommandMapping;
@@ -10,11 +10,16 @@ import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.plugin.Plugin;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
-@Plugin(id = "rufix", name = "RuFix", version = "1.0", description = "ruFix")
-public class RuFix {
+@Plugin(
+        id = "rufix",
+        name = "RuFix",
+        version = "1.0.1",
+        description = "Convert commands from Russian to English layout"
+)
+public class Rufix {
+
     private static final String RUSSIAN_LAYOUT =
             "ёЁ\"№;:?/йцукенгшщзхъЙЦУКЕНГШЩЗХЪфывапролджэФЫВАПРОЛДЖЭячсмитьбю.ЯЧСМИТЬБЮ,іІїЇ";
 
@@ -58,4 +63,3 @@ public class RuFix {
         return s;
     }
 }
-

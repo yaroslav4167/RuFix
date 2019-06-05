@@ -1,9 +1,10 @@
 *.class
+*.iml
 *.log
 *.jar
 
-ruFix.iml
-
 .idea/
-out/
-target/
+.gradle
+!gradle-wrapper.jar
+
+/build/
